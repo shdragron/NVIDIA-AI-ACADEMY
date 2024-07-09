@@ -69,8 +69,9 @@ void f_6(){
     //a를 b로 나눈 나머지를 %연간자 없이 구하세요.
     int a = 7, b =3;
     printf("%d\n" , a - b * (a/b));
-    
+
     //배열
     int ary[4] = {1,2,3,4};
     printf("%d",ary[2]);
+
 }  
