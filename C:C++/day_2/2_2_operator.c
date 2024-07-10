@@ -1,9 +1,6 @@
 #include <stdio.h>
 void f_2();
 
-int main() {
-    f_2();
-}
 
 void f_1() {
     // //관계 : > >= < <= == !=
@@ -83,10 +80,8 @@ void f_2(){
 
 }
 
-void f_7(){
-    int a;
-    int b = 10;
-    scanf("%d", &a);
+int f_7(int a, int b){
+ 
     //퀴즈
     //점수를 학점으로 바꿔주세요.
     if(a <= 100 && a>= 90){
@@ -105,6 +100,14 @@ void f_7(){
         b = 5;
 
     }
-    printf("%d\n",b);
+    return b;
+
+}
+
+int main(){
+    int a;
+    int b = 10;
+    scanf("%d", &a);
+    printf("%d",f_7(a,b));
 
 }
