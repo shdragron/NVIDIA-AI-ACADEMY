@@ -1,3 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
 C:C++/** linguist-documentation=false
 C:C++/** linguist-vendored=false
 Python/** linguist-documentation=false
