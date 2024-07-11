@@ -56,7 +56,7 @@ def max_2(a,b):
 def max_3(a,b,c,d):
     a = max_2(max_2(a, max_2(b,c)),d)
     b = max_2(max_2(a,b),max_2(c,d))
-    return a , b
+    return a, b
 
 
 print(max_3(a,b,c,d))
