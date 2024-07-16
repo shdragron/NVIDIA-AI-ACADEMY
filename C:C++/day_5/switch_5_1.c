@@ -55,7 +55,14 @@ void f_1(){
 // int my_scanf(int n){ -> 가변인자 불가능. 
 //     return n;
 // }
+// 퀴즈: 점수를 학점으로 변환하는 함수오 만드세요.
+// void f_2(){
+//           break;
+    
+//     default:
+//         break;
+//     }  switch (a)
+//     {
+//     case 90 < :
 
-void f_2(){
-
-}
+// }
