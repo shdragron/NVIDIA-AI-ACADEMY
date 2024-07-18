@@ -65,5 +65,3 @@ for i in range(100):
 t = [1,3,5]
 print(t)
 print(*t)
-
-
