@@ -30,7 +30,7 @@ void swap(int *a, int * b){
     printf("%p, %p\n", a,b);
 }
 
-void swap(int *a, int *b){
+void swap2(int *a, int *b){
     printf("%p, %p\n", a,b);
     int tmp;
     tmp = a[0];

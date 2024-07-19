@@ -39,6 +39,7 @@ print("--------------------"*30)
 url = "https://www.kma.go.kr/DFSROOT/POINT/DATA/top.json.txt"
 response = requests.get(url) # 인코딩 실패
 text = response.content.decode('utf-8')
+print(type(response.content))
 print()
 j = json.loads(text)
 print(j)
@@ -49,5 +50,5 @@ for i in range(len(j)):
     print(j[i]["code"],j[i]["value"])
 
 print("--------------------"*30)
-json_text = '[{'code': '11', 'value': '서울특별시'}, {'code': '26', 'value': '부산광역시'}, {'code': '27', 'value': '대구광역시'}, {'code': '28', 'value': '인천광역시'}, {'code': '29', 'value': '광주광역시'}, {'code': '30', 'value': '대전광역시'}, {'code': '31', 'value': '울산광역시'}, {'code': '41', 'value': '경기도'}, {'code': '42', 'value': '강원도'}, {'code': '43', 'value': '충청북도'}, {'code': '44', 'value': '충청남도'}, {'code': '45', 'value': '전라북도'}, {'code': '46', 'value': '전라남도'}, {'code': '47', 'value': '경상북도'}, {'code': '48', 'value': '경상남도'}, {'code': '50', 'value': '제주특별자치도'}]'
+# json_text = '[{'code': '11', 'value': '서울특별시'}, {'code': '26', 'value': '부산광역시'}, {'code': '27', 'value': '대구광역시'}, {'code': '28', 'value': '인천광역시'}, {'code': '29', 'value': '광주광역시'}, {'code': '30', 'value': '대전광역시'}, {'code': '31', 'value': '울산광역시'}, {'code': '41', 'value': '경기도'}, {'code': '42', 'value': '강원도'}, {'code': '43', 'value': '충청북도'}, {'code': '44', 'value': '충청남도'}, {'code': '45', 'value': '전라북도'}, {'code': '46', 'value': '전라남도'}, {'code': '47', 'value': '경상북도'}, {'code': '48', 'value': '경상남도'}, {'code': '50', 'value': '제주특별자치도'}]'
 
