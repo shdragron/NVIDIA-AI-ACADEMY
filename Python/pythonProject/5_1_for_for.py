@@ -88,6 +88,16 @@ def p_5():
                 print(" ", end = '')
         print()
 
+def p_6():
+    for i in range(5):
+        for j in range(5):
+            if (j/2):
+                print("*", end = '')
+            elif(i==1 && (j==1 || j==2 ||j==)):
+            else:
+                print(" ", end = '')
+        print()
+
 p_1()
 print()
 p_2()
@@ -95,5 +105,7 @@ print()
 p_3()
 print()
 p_4()
+print()
+p_5()
 print()
 p_5()
