@@ -62,6 +62,14 @@ public:
     //     return Point(a,b);
     // }
 
+    // 3)외부애서 오버로딩된 것을 사용하려면 friend를 사용해야한다.
+
+    friend Point (operator +)(const Point rhs, const Point lhs) { // 넘어 온 값은 변화하지 않기때문에  const를 사용해야된다.
+            int a = lhs.x + rhs.x;
+            int b = lhs.y + rhs.y;
+            return Point(a,b);
+};
+
 };
 
     // 2) class 밖 오버로딩
