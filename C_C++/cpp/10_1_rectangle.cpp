@@ -17,8 +17,8 @@ class Point {
 
     Point(int x, int y) { //생성자
         std::cout << "생성자 호출" << endl;
-        this -> x = x; //this 는 자기 자신을 가리키는 주소 -> 파이썬의 self
-        this -> y = y; //this 는 자기 자신을 가리키는 주소 ->를 해서 값을 나타낸다.
+        this - >x = x; //this 는 자기 자신을 가리키는 주소 -> 파이썬의 self
+        this - >y = y; //this 는 자기 자신을 가리키는 주소 ->를 해서 값을 나타낸다.
     } ~ Point() { // 소멸자: 객체가 끝날때 실행되는 함수
 
         std::cout << "소멸자 호출" << endl;
@@ -35,30 +35,23 @@ class Point {
 
 class Reactangle {
 
-    public: 
 
-    // int x, y, x1, y1;
+    public:
+    int x, y, x1, y1;
 
-    // Reactangle(int x = 0, int y = 0, int x1 = 0, int y1 = 0) { //생성자 -> default 값이 있기 때문에 매개변수를 안넣어서 기본 생성자처럼 동작한다.
+    // int x, y, x1, y1; Reactangle(int x = 0, int y = 0, int x1 = 0, int y1 = 0) {
+    // 생성자 -> default 값이 있기 때문에 매개변수를 안넣어서 기본 생성자처럼 동작한다.     std::cout << "생성자 호출"
+    // << endl;     this -> x = x;     this -> y = y;     this -> x1 = x1;     this
+    // -> y1 = y1; }
 
-    //     std::cout << "생성자 호출" << endl;
-    //     this -> x = x;
-    //     this -> y = y;
-    //     this -> x1 = x1;
-    //     this -> y1 = y1;
-    // } 
-    
-    
-    Reactangle(int x = 0, int y = 0, int x1 = 0, int y1 = 0) : int x, y, x1, y1 { //생성자 -> default 값이 있기 때문에 매개변수를 안넣어서 기본 생성자처럼 동작한다.
+    Reactangle(int x = 0, int y = 0, int x1 = 0, int y1 = 0) { //생성자 -> default 값이 있기 때문에 매개변수를 안넣어서 기본 생성자처럼 동작한다.
 
         std::cout << "생성자 호출" << endl;
-        this -> x = x;
-        this -> y = y;
-        this -> x1 = x1;
-        this -> y1 = y1;
-    } 
-
-    ~ Reactangle() { // 소멸자: 객체가 끝날때 실행되는 함수
+        this ->x = x;
+        this ->y = y;
+        this ->x1 = x1;
+        this ->y1 = y1;
+    } ~ Reactangle() { // 소멸자: 객체가 끝날때 실행되는 함수
 
         std::cout << "소멸자 호출" << endl;
 
@@ -86,9 +79,8 @@ int main() {
     Reactangle r(p.x, p.y, p1.x, p1.y);
     std::cout << p.x << p.y << p1.x << p1.y << endl;
 
-    // std::cout << r.area() << endl;
-    // std::cout << r.height() << endl;
-    // std::cout << r.length() << endl;
+    // std::cout << r.area() << endl; std::cout << r.height() << endl; std::cout <<
+    // r.length() << endl;
 
     Reactangle basic;
     basic.area();
