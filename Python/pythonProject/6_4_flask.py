@@ -4,13 +4,15 @@
 # 운영서버: 실제 사용 서버
 # 개발서버: 실제와 유사한 개발을 위한 서버
 
-from random import random
+import random
 
 import test
 
 from flask import Flask, render_template
 
 app = Flask(__name__)
+
+# static, templates
 
 @app.route("/")
 def index():
@@ -20,6 +22,11 @@ def index():
 def randoms():
     a = [random.randint(0,100) for i in range(100)]
     return a
+
+@app.route("/html")
+def html():
+    lotto = [random.randrange(45)+1 for _ in range(6)]
+    return render_template("sample.html",numbers = lotto)
 
 if __name__ == "__main__":
     app.run(debug=True)
