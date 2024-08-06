@@ -40,5 +40,5 @@ print()
 
 # 퀴즈: 넘파이 2차원 배열의 마지막 행을 출력하고 마지막 열을 출력하세요.
 for n in range(len(b)):
-    print(b[n])
     print(b[n, 3])
+print(b[:,3])
