@@ -56,16 +56,28 @@ print(df3, end='\n\n')
 # 	* 45:  "45-49"
 # 	* 50:  "50-55"
 # 	* 56:  "56+"
-lab = np.array(["Under 18", "18-24", "25-34","35-44","45-49","50-55","56+"])
+# lab = np.array(["Under 18", "18-24", "25-34","35-44","45-49","50-55","56+"])
+#
+# df3.plot(kind='bar',colormap= 'jet')
+# plt.xticks(range(len(lab)),lab, rotation=45)
+# plt.show()
+# print('-'*30)
+# # 퀴즈: df4에서 25살 남자의 평점을 알려주세요. (3가지)
+# df4 = pd.DataFrame.pivot_table(data,values='Rating',index= ['Age','Gender'])
+# print(df4, end='\n\n')
+# a, b = round(df4['Rating'].values[4],6), round(df4['Rating'].values[5],6)
+# print(a,' ',b, end='\n\n')
+# print(df4.loc[25]['Rating'])
+# print(round(df4.loc[25]['Rating'].values[0],6),round(df4.loc[25]['Rating'].values[1],6))
 
-df3.plot(kind='bar',colormap= 'jet')
-plt.xticks(range(len(lab)),lab, rotation=45)
-plt.show()
+# 퀴즈
+# 평점을 성별, 나이, 직업으로 분류해서 보여주세요
+df5 = data.pivot_table(values='Rating', columns=['Occupation', 'Gender'], index='Age')
+print(df5)
 
-
-
-
-
+df6 = data.pivot_table(values='Rating', columns=['Occupation', 'Gender']
+                       , index='Age',fill_value = 3)
+print(df6)
 
 
 

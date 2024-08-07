@@ -40,6 +40,8 @@ print(df2, end='\n\n')
 df3 = pd.DataFrame.pivot_table(data,values='Rating',index= 'Age')
 print(df3, end='\n\n')
 
+df4 = pd.DataFrame.pivot_table(data,values='Rating',columns = 'Gender',index= 'Age')
+print(df4, end='\n\n')
 # 퀴즈: 성별 평점을 pivot_table 없이 numpy로 구해보세요.
 
 print(data.Gender.values == 'F')
