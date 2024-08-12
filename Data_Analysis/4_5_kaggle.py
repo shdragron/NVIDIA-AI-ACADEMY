@@ -1,4 +1,5 @@
 # 4_4_kaggle.py
+# 어떤 모델이 해당 데이터에서 적합할까?
 import numpy as np
 import pandas as pd
 import seaborn as sns
