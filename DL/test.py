@@ -1,12 +1,33 @@
 import pandas as pd
 import numpy as np
+from sklearn import preprocessing
+import keras
+import matplotlib.pyplot as plt
 
-cars = pd.read_csv('data\cars.csv')
-print(cars)
-print(cars.head)
-print(cars.columns[])
+data = pd.read_csv('data/trees.csv')
 
-print()
+print(data.columns)
 
-# print(cars.)
-# print(cars.head.shape)
+x_1 = data.rownames.values.reshape(-1,1)
+x_2 = data.Girth.values.reshape(-1,1)
+x_3 = data.Height.values.reshape(-1,1)
+y = data.Volume.values.reshape(-1,1)
+
+x = np.hstack((x_1, x_2, x_3))
+
+# x = preprocessing.minmax_scale(x)
+# loss 15.7
+# 그냥
+# 25.3
+# x = preprocessing.scale(x)
+# 10.4
+
+model = keras.models.Sequential([keras.layers.Dense(units=1)])
+# model.add(keras.layers.Dense(units=1))
+# 모델 컴파일
+model.compile(optimizer=keras.optimizers.Adam(learning_rate=0.5),
+              loss=keras.losses.MeanSquaredError,
+              metrics = ['RootMeanSquaredError']
+              )
+# 모델 훈련
+model.fit(x, y, epochs = 1000,verbose = 1) # 순전파 + 최적화함수 + 역전파

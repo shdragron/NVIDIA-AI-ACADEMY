@@ -4,6 +4,8 @@ import numpy as np
 import keras
 import matplotlib.pyplot as plt
 
+
+
 data = pd.read_csv('data/trees.csv')
 # print(data)
 
@@ -19,6 +21,7 @@ y = data.Volume.values.reshape(-1,1)
 
 x = np.hstack([x, x_1])
 
+# x.transpose()
 
 # 모델 생성
 
