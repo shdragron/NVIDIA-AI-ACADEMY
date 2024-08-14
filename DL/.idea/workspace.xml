@@ -5,19 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f3f7ed3-50b8-4b63-b9b4-e4c46621a447" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/3_1_logistic_regression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_1_sigmoid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_3_logistic_regression_pima.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_4_preprocessing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_5_softmax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3_6_softmax_regression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_3_multiple_regression_trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_3_multiple_regression_trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_4_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_4_preprocessing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -42,6 +44,7 @@
     "Python.3_3_logistic_regression_pima.executor": "Run",
     "Python.3_4_preprocessing.executor": "Run",
     "Python.3_5_softmax.executor": "Run",
+    "Python.3_6_softmax_regression.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -80,7 +83,8 @@
       <workItem from="1723510965169" duration="14008000" />
       <workItem from="1723529642681" duration="8175000" />
       <workItem from="1723594218204" duration="5700000" />
-      <workItem from="1723602629341" duration="11872000" />
+      <workItem from="1723602629341" duration="12304000" />
+      <workItem from="1723621226703" duration="1077000" />
     </task>
     <servers />
   </component>
@@ -90,14 +94,15 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DL$1_1_linear_regression_python.coverage" NAME="1_1_linear_regression_python Coverage Results" MODIFIED="1723450347943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
     <SUITE FILE_PATH="coverage/DL$3_1_sigmoid.coverage" NAME="3_1_sigmoid Coverage Results" MODIFIED="1723599316366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL$3_5_softmax.coverage" NAME="3_5_softmax Coverage Results" MODIFIED="1723619230056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL$3_6_softmax_regression.coverage" NAME="3_6_softmax_regression Coverage Results" MODIFIED="1723622237048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL$3_3_logistic_regression_pima.coverage" NAME="3_3_logistic_regression_pima Coverage Results" MODIFIED="1723617010665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL$test.coverage" NAME="test Coverage Results" MODIFIED="1723614340086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DL$3_4_preprocessing.coverage" NAME="3_4_preprocessing Coverage Results" MODIFIED="1723619906916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DL$2_1_linear_regression_cars.coverage" NAME="2_1_linear_regression_cars Coverage Results" MODIFIED="1723530479379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DL$3_1_logistic_regression.coverage" NAME="3_1_logistic_regression Coverage Results" MODIFIED="1723604597175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DL$2_2_multiple_regression.coverage" NAME="2_2_multiple_regression Coverage Results" MODIFIED="1723533309854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DL$2_3_multiple_regression_trees.coverage" NAME="2_3_multiple_regression_trees Coverage Results" MODIFIED="1723594269849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DL$3_5_softmax.coverage" NAME="3_5_softmax Coverage Results" MODIFIED="1723619230056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DL$3_3_logistic_regression_pima.coverage" NAME="3_3_logistic_regression_pima Coverage Results" MODIFIED="1723617010665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DL$test.coverage" NAME="test Coverage Results" MODIFIED="1723614340086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DL$1_2_linear_regression.coverage" NAME="1_2_linear_regression Coverage Results" MODIFIED="1723516098504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
