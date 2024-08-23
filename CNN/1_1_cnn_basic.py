@@ -35,15 +35,18 @@ model = keras.models.Sequential([
     # keras.layers.Conv2D(6,5,1,'VALID',activation='relu'),
     # keras.layers.MaxPooling2D(2)
 
-    keras.layers.Conv2D(12,3,1,'valid',activation='relu'),
-    keras.layers.MaxPooling2D(2),
+    keras.layers.Conv2D(6,5,1,'valid',activation='relu',name='conv_1'),
+    keras.layers.MaxPooling2D(2,name='pool_1'),
+
+    keras.layers.Conv2D(12, 3, 1, 'valid', activation='relu', name='conv_2'),
+    keras.layers.MaxPooling2D(2, name='pool_2'),
 
     # FC Layer
     # keras.layers.Flatten(),
-    keras.layers.Reshape([5*5*12]),
-    keras.layers.Dense(units=256, activation='relu'),
-    keras.layers.Dense(units=64, activation='relu'),
-    keras.layers.Dense(units=10, activation='softmax'),
+    keras.layers.Flatten(name='flatten'),
+    keras.layers.Dense(units=256, activation='relu',name='fc_1'),
+    keras.layers.Dense(units=64, activation='relu',name='fc_2'),
+    keras.layers.Dense(units=10, activation='softmax',name='fc_3'),
 
 ])
 

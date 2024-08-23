@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f3f7ed3-50b8-4b63-b9b4-e4c46621a447" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../CNN/.idea/CNN.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CNN/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CNN/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CNN/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CNN/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6_1_softmax_iris.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6_2_multi_layer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/2_1_lenet5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/2_2_lenet5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/2_3_functional.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CNN/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CNN/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CNN/1_1_cnn_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CNN/1_1_cnn_basic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_4_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_4_preprocessing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
       <workItem from="1724199208532" duration="24879000" />
       <workItem from="1724285436329" duration="12162000" />
       <workItem from="1724303980180" duration="319000" />
-      <workItem from="1724370961009" duration="932000" />
+      <workItem from="1724370961009" duration="1669000" />
     </task>
     <servers />
   </component>
