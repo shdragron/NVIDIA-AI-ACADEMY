@@ -25,7 +25,7 @@ def show_label_encoder():
 
     print(enc.transform(['figi', 'rome']))
 
-
+6_1
 def show_label_binarizer():
     cities = ['figi', 'bali', 'rome', 'bali', 'bali']
 
