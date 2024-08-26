@@ -9,7 +9,6 @@ data = [
     [0, 1, 0],
     [1, 0, 0],
     [1, 1, 1],
-    []
 ]
 
 # def basic(data):
@@ -186,7 +185,8 @@ def multi_input_and_output():
     model = keras.models.Model([input1, input2], outputs=[output1, output2])
 
     model.compile(optimizer=keras.optimizers.SGD(0.1),
-                  loss=keras.losses.binary_crossentropy)
+                  loss=keras.losses.binary_crossentropy,
+                  metrics=['acc','acc'])
 
     model.fit([x1, x2], [y1, y2], epochs=10, verbose=2)
 
