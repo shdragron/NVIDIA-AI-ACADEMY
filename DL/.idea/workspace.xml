@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f3f7ed3-50b8-4b63-b9b4-e4c46621a447" name="Changes" comment="" />
+    <list default="true" id="4f3f7ed3-50b8-4b63-b9b4-e4c46621a447" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../CNN/4_4_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/4_5_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/4_6_save_and_load_teach.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/4_6_saveandload.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/jpg/temp/image_0001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/jpg/temp/image_0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CNN/jpg/temp/image_0003.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CNN/4_3_augmentor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CNN/4_3_augmentor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CNN/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CNN/test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +108,7 @@
       <workItem from="1724303980180" duration="319000" />
       <workItem from="1724370961009" duration="1669000" />
       <workItem from="1724631013100" duration="2000" />
+      <workItem from="1724746666133" duration="329000" />
     </task>
     <servers />
   </component>

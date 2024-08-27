@@ -13,3 +13,10 @@ print(b.shape)
 print(b)
 print(c)
 print(d)
+
+d = [1,2,4]
+d = np.array(d)
+print(len(d))
+d = [0] * d.shape[0]
+
+print(d)
