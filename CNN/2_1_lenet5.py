@@ -24,6 +24,7 @@ def cal_num_cost(inputs_num,channel_num, filter_size, bias):
 
 
 
+
 model = keras.models.Sequential([
 
     keras.layers.Input(shape = x_train[0].shape),
@@ -45,7 +46,6 @@ model = keras.models.Sequential([
     #  Output     Input      weight + bias
     # (? , 10) = (? , 84) @ (84, 10) + 10
     keras.layers.Dense(units=10, activation='softmax',name='Output'),
-
 ])
 
 model.summary() # 모델의 아키텍쳐를 보여준다.
