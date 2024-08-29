@@ -45,44 +45,31 @@ def copy_letters():
         filename, ext = name.lower().split('.')
         i0, i1, i2, i3 = filename.split('_')
         # print(i0, i1, i2, i3)
-        total.append(i1+i2) # 'digit3', 'lowerp'
+        # total.append(i1+i2) # 'digit3', 'lowerp'
+
+        key = i1 + i2
+        if key not in freq:
+            freq[key] = 0
+
+        freq[key] += 1
+        target = 'train' if freq[key] < TRAIN_SIZE else 'test'
 
         try:
-            if i1 == 'digit': # 숫자당 73개
-                key = 'digit' + i2
-                if key not in freq:
-                    freq[key] = 0
-                freq[key] += 1
-                target = 'train' if freq[key] < TRAIN_SIZE else 'test'
-                dst = os.path.join('letters/digit/{}/{}'.format(target,i2), name)
+            dst = os.path.join('letters/{}/{}/{}'.format(i1, target, i2), name)
 
-
-            elif i1 == 'upper': # 글자당 71개
-                key = 'upper' + i2
-                if key not in freq:
-                    freq[key] = 0
-                freq[key] += 1
-                target = 'train' if freq[key] < TRAIN_SIZE else 'test'
-                dst = os.path.join('letters/upper/{}/{}'.format(target, i2), name)
-
-
-            elif i1 == 'lower':
-                key = 'lower' + i2
-                if key not in freq:
-                    freq[key] = 0
-                freq[key] += 1
-                target = 'train' if freq[key] < TRAIN_SIZE else 'test'
-                dst = os.path.join('letters/lower/{}/{}'.format(target, i2), name)
-
-
-            else:
-                assert False # 여기로 들어가면 죽는다.
+            # if i1 == 'digit':
+            #     dst = os.path.join('letters/{}/{}/{}'.format(i1,target, i2), name)
+            # elif i1 == 'lower'
+            #     dst = os.path.join('letters/{}/{}/{}'.format(i1,target, i2), name)
+            # elif i1 == 'upper'
+            #     dst = os.path.join('letters/{}/{}/{}'.format(i1,target, i2), name)
+            # else:
+            #     assert False
 
             src = os.path.join('my_letters', name)
             shutil.copyfile(src, dst)
-
         except:
-               print(name)
+            print(name)
 
     # print(collections.Counter(total))
     # Counter(
