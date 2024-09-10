@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ec72899-7ef8-41c2-abb2-bee339947a4c" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+    <list default="true" id="3ec72899-7ef8-41c2-abb2-bee339947a4c" name="변경" comment="변경">
+      <change afterPath="$PROJECT_DIR$/Object_detection/3.YoloV3/checkpoints/yolov3.weights" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Object_detection/test_gradient_tape.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/7_1_callback.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/7_1_callback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_detection/2.YoloV1/yolov1_아키텍처.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_detection/3.YoloV3/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_detection/3.YoloV3/configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_detection/3.YoloV3/yolo_core/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_detection/3.YoloV3/yolo_core/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_detection/3.YoloV3/yolo_core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_detection/3.YoloV3/yolo_core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_detection/3.YoloV3/yolov3_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_detection/3.YoloV3/yolov3_train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +50,18 @@
     &quot;Python.8_3_dogs_and_cats.executor&quot;: &quot;Run&quot;,
     &quot;Python.Frcnn_main.executor&quot;: &quot;Run&quot;,
     &quot;Python.Menagement.executor&quot;: &quot;Run&quot;,
+    &quot;Python.configuration.executor&quot;: &quot;Run&quot;,
     &quot;Python.mnist_squence_exam.executor&quot;: &quot;Run&quot;,
     &quot;Python.parsers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_gradient_tape.executor&quot;: &quot;Run&quot;,
     &quot;Python.train.executor&quot;: &quot;Run&quot;,
     &quot;Python.voc_annotation.executor&quot;: &quot;Run&quot;,
     &quot;Python.yolov1_아키텍처.executor&quot;: &quot;Run&quot;,
+    &quot;Python.yolov3_train.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Harmony05/Desktop/NVIDIA-AI-ACADEMY/NVIDIA-AI-ACADEMY/Object_detection/2.YoloV1/3_yolov1-keras-voc_dataset_loading&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Harmony05/Desktop/YOLOV5&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -67,6 +73,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Harmony05\Desktop\NVIDIA-AI-ACADEMY\NVIDIA-AI-ACADEMY\Object_detection\3.YoloV3\checkpoints" />
       <recent name="C:\Users\Harmony05\Desktop\NVIDIA-AI-ACADEMY\NVIDIA-AI-ACADEMY\Object_detection\2.YoloV1\3_yolov1-keras-voc_dataset_loading" />
       <recent name="C:\Users\Harmony05\Desktop\NVIDIA-AI-ACADEMY\NVIDIA-AI-ACADEMY\Object_detection\1.FRCNN\1_My_FasterRCNN_Anchor_RPN_Operation\FRCNN_FULL\4_My_FasterRCNN_Predict구현_최종\Trained_Models" />
     </key>
@@ -75,6 +82,36 @@
       <recent name="C:\Users\Harmony05\Desktop\NVIDIA-AI-ACADEMY\NVIDIA-AI-ACADEMY\Object_detection\2.YoloV1\3_yolov1-keras-voc_dataset_loading" />
       <recent name="C:\Users\Harmony05\Desktop\NVIDIA-AI-ACADEMY\NVIDIA-AI-ACADEMY\Object_detection" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="yolov3_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NVIDIA-AI-ACADEMY" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Object_detection/3.YoloV3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Object_detection/3.YoloV3/yolov3_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.yolov3_train" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -98,7 +135,8 @@
       <workItem from="1725496802518" duration="18196000" />
       <workItem from="1725592025591" duration="14693000" />
       <workItem from="1725929057198" duration="215000" />
-      <workItem from="1725929287362" duration="1329000" />
+      <workItem from="1725929287362" duration="19636000" />
+      <workItem from="1725956866095" duration="17000" />
     </task>
     <servers />
   </component>
@@ -117,6 +155,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$configuration.coverage" NAME="configuration Coverage Results" MODIFIED="1725951583196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Object_detection/3.YoloV3" />
     <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$2__.coverage" NAME="2.불용어제거파일_결측치제거 Coverage Results" MODIFIED="1725507103179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Object_detection/0.1.LSTM(KNLP)/1.LSTM_한국영화_리뷰분류" />
     <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$Frcnn_main.coverage" NAME="Frcnn_main Coverage Results" MODIFIED="1725524392296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Object_detection/1.FRCNN/1_My_FasterRCNN_Anchor_RPN_Operation/FRCNN_FULL/4_My_FasterRCNN_Predict구현_최종" />
     <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$8_3_dogs_and_cats.coverage" NAME="8_3_dogs_and_cats Coverage Results" MODIFIED="1725265198716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CNN" />
@@ -132,7 +171,9 @@
     <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$1__.coverage" NAME="1.한국영화리뷰_불용어제거 Coverage Results" MODIFIED="1725507180684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Object_detection/0.1.LSTM(KNLP)/1.LSTM_한국영화_리뷰분류" />
     <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$8_2_car_evaluation.coverage" NAME="8_2_car_evaluation Coverage Results" MODIFIED="1725246685421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CNN" />
     <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$train.coverage" NAME="train Coverage Results" MODIFIED="1725599904410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Object_detection/2.YoloV1" />
+    <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$yolov3_train.coverage" NAME="yolov3_train Coverage Results" MODIFIED="1725952955754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Object_detection/3.YoloV3" />
     <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$mnist_squence_exam.coverage" NAME="mnist_squence_exam Coverage Results" MODIFIED="1725611283828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Object_detection/2.YoloV1/Squence_generator" />
+    <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$test_gradient_tape.coverage" NAME="test_gradient_tape Coverage Results" MODIFIED="1725947579462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Object_detection" />
     <SUITE FILE_PATH="coverage/NVIDIA_AI_ACADEMY$yolov1_.coverage" NAME="yolov1_아키텍처 Coverage Results" MODIFIED="1725592074781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Object_detection/2.YoloV1" />
   </component>
 </project>

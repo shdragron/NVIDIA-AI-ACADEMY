@@ -68,6 +68,7 @@ def main():
     optimizer = tf.keras.optimizers.Adam()
     yolov3_model.compile(optimizer=optimizer)
 
+    # model.fit -> 과 같다.
     def train_step(image_data, target):
         with tf.GradientTape() as tape:
             #print('GradiantTape')
@@ -127,7 +128,7 @@ def main():
 
         # voc data 재학습에 대한 학습 모델 저장 ( 저장 경로 불일치시 저장 오류 )
         #yolov3_model.save_weights(save_directory + '\myyolov3.weights.h5')
-        yolov3_model.save(save_directory + '\myyolov3.h5')
+        yolov3_model.save(save_directory + '/myyolov3.h5')
 
 
 if __name__ == '__main__':

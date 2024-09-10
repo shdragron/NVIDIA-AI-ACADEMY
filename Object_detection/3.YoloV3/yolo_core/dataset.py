@@ -77,7 +77,7 @@ class Dataset():
             # if not os.path.exists(image_path):
             #     raise KeyError("%s does not exist ... " %image_path)
             if TRAIN_LOAD_IMAGES_TO_RAM:
-                image = cv2.imread('./dataset/voc/' + image_path)
+                image = cv2.imread('./dataset_yolov3/voc/' + image_path)
                 # print('read image')
             else:
                 image = ''

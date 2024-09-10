@@ -3,7 +3,7 @@ TRAINDATA_trainsfer = True  # coco data 학습된 yolov3 darknet 가중치 로�
 
 YOLO_V3_WEIGHTS = "./checkpoints/yolov3.weights"
 
-YOLO_COCO_CLASSES           = "./dataset/coco.names"
+YOLO_COCO_CLASSES           = "./dataset_yolov3/coco.names"
 
 YOLO_STRIDES                = [8, 16, 32]
 YOLO_IOU_LOSS_THRESH        = 0.5
@@ -18,8 +18,8 @@ YOLO_ANCHORS = [[[10, 13], [16, 30], [33, 23]],        # 8 stride 시 앵커 (sm
 # Trainset Options
 # 원본 voc2012 dataset 은 D:\딥러닝_객체인식_2022\yolov3_학습자료\VOC2012_원본 참조
 # 본 예제는 train 과정을 단축해서 보여주기 위해 train dataset 줄임
-TRAIN_CLASSES    =  "./dataset/voc/voc2012.names"
-TRAIN_ANNOT_PATH =  "./dataset/voc/voc2012_train.txt"
+TRAIN_CLASSES    =  "./dataset_yolov3/voc/voc2012.names"
+TRAIN_ANNOT_PATH =  "./dataset_yolov3/voc/voc2012_train.txt"
 TRAIN_CHECKPOINTS_FOLDER    = "./checkpoints"
 DATA_TYPE = "yolo_v3_voc"
 TRAIN_BATCH_SIZE            = 1 # 원래는 16 --> 1로 수정해 테스트중
@@ -30,7 +30,7 @@ TRAIN_LOAD_IMAGES_TO_RAM    = True # With True faster training, but need more RA
 TRAIN_LR_INIT               = 1e-4
 TRAIN_LR_END                = 1e-6
 TRAIN_WARMUP_EPOCHS         = 1
-TRAIN_EPOCHS                = 4
+TRAIN_EPOCHS                = 1
 
 YOLO_STRIDES                = [8, 16, 32]
 # YOLO_IOU_LOSS_THRESH        = 0.5
@@ -38,7 +38,7 @@ YOLO_STRIDES                = [8, 16, 32]
 # YOLO_MAX_BBOX_PER_SCALE     = 100
 
 # TESTset options
-TEST_ANNOT_PATH  =  "./dataset/voc/voc2012_val.txt"
+TEST_ANNOT_PATH  =  "./dataset_yolov3/voc/voc2012_val.txt"
 TEST_BATCH_SIZE             = 16
 TEST_INPUT_SIZE             = 416
 TEST_DATA_AUG               = False

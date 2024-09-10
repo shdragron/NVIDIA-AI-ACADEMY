@@ -141,7 +141,7 @@ def YOLOv3_model(input_layer, NUM_CLASS):
     # small 크기 객체 예측용으로 사용 Shape = [None, 52, 52, 255] OR [None, 52, 52, 75]
     # conv2d_74 ( 전이 skip )
     conv_sbbox = DarknetConv2D(conv_sobj_branch, (1, 1, 256, 3 * (NUM_CLASS + 5)), activate=False, bn=False)
-
+#           52*52*255   26*26*255   13*13*255
     return [conv_sbbox, conv_mbbox, conv_lbbox]
 
 def Create_Yolov3(input_size=416, channels=3, training=False, CLASSES=YOLO_COCO_CLASSES):
@@ -149,7 +149,7 @@ def Create_Yolov3(input_size=416, channels=3, training=False, CLASSES=YOLO_COCO_
     #print("NUM_CLASS : ", NUM_CLASS)
 
     input_layer = Input([input_size, input_size, channels]) # 416x416x3
-    conv_tensors = YOLOv3_model(input_layer, NUM_CLASS)
+    conv_tensors = YOLOv3_model(input_layer, NUM_CLASS) # [conv_sbbox, conv_mbbox, conv_lbbox]
 
     # training 과정은 output으로 마지막의 conv_tensors + decoding된 pred_tensors 를 동시 반환
     output_tensors = []
@@ -186,7 +186,7 @@ def decode(conv_output, NUM_CLASS, i=0):
     conv_output = tf.reshape(conv_output, (batch_size, output_size, output_size, 3, 5 + NUM_CLASS))
 
     # 모델 출력값 분리 추출
-    conv_raw_txty = conv_output[:,:,:,:,0:2] # 모델 출력 box 중심 좌표
+    conv_raw_txty = conv_output[:,:,:,:,0:2] # 모델 출력 box 중심 좌표 -> (None, None, None, 3, 25) 25 -> [x,y,w,h,c,class(20)]
     conv_raw_twth = conv_output[:,:,:,:,2:4] # 모델 출력  box 너비,높이
     conv_raw_conf = conv_output[:,:,:,:,4:5] # 모델 출력의 객체 존재 확신(신뢰)도
     conv_raw_prob = conv_output[:,:,:,:,5: ] # 모델 출력의 class분류 추청도
@@ -228,13 +228,14 @@ def decode(conv_output, NUM_CLASS, i=0):
     # 임의의 bounding box의 너비와높이를 생성하도록 학습하는것 보다
     # 정규화된 prior anchor box를 활용함으로서 학습이 안정적으로 되게 함
     pred_wh = (tf.exp(conv_raw_twth) * ANCHORS[i]) * STRIDES[i]
+    # ANCHORS[i]: prior 종회비 적용
     # xywh로 병합
     pred_xywh = tf.concat([pred_xy, pred_wh], axis=-1)
 
     # object box의 예측 신뢰도 sigmoid 적용
     pred_conf = tf.sigmoid(conv_raw_conf)
     # 예측 클래스 추정치 sigmoid 적용
-    pred_prob = tf.sigmoid(conv_raw_prob)
+    pred_prob = tf.sigmoid(conv_raw_prob) # 각 비트 별로 적용(바
 
     return tf.concat([pred_xywh, pred_conf, pred_prob], axis=-1)
 
