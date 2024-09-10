@@ -16,7 +16,7 @@ y = enc.fit_transform(y)
 
 x = preprocessing.scale(x)
 
-data = model_selection.train_test_split(x, y, train_size=0.7)
+data = model_selection.train_test_split(x, y, train_size=0.7, shuffle=True)
 x_train, x_test, y_train, y_test = data
 
 
@@ -55,6 +55,6 @@ class Custom(keras.callbacks.Callback):
 custom = Custom()
 
 model.fit(x_train, y_train, epochs=10, verbose=0, callbacks=[custom],
-          validation_data=(x_test, y_test))
+          validation_data=(x_test, y_test),batch_size=10, shuffle=True)
 
 print('count :', custom.count)
