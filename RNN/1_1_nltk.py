@@ -107,8 +107,8 @@ def grams():
 # datasets()
 # corpus()
 # tokenize()
-# stemming()
-grams()
+stemming()
+# grams()
 
 
 
